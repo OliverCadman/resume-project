@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
 
-/* ------ Colours ------*/
+/*--------------------------------------------Colors*/
 
 .bg-color-name-title {
     background-color: #676767;
@@ -16,25 +16,45 @@
 
 .ui-menu-color-home {
     background-color: #e67e22;
-
 }
 
 .ui-menu-color-resume {
     background-color: #9b59b6;
-
 }
 
 .ui-menu-color-contact {
     background-color: #3498db;
-
 }
 
 .ui-menu-color-download {
     background-color: #525252;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+
+.history-heading,
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.bg-color-work-history {
+    background-color: #9b59b6;
 
 }
 
-/* ----- Special paddings/margins/text ----- */
+/* ----------------------------------------Special paddings/margins/text */
 
 h1,
 h2,
@@ -48,7 +68,7 @@ h4 {
 }
 
 .general-sub {
-    font-family: 'Exo', sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fafafa;
 }
@@ -68,13 +88,13 @@ h4 {
 }
 
 .section-heading {
-    font-family: 'Exo', sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
 }
 
-/* ----- Heading ----- */
+/*--------------------------------------------Heading*/
 
 header {
     margin: 0;
@@ -85,19 +105,18 @@ header {
 }
 
 .logo {
-    background: url(images/rosie.jpeg);
+    background: url("./images/rosie.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
-    transition: all 2s ease-in-out;
-    -moz-transition: all 2s ease-in-out;
-    -webkit-transition: all 2s ease-in-out;
-
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .name {
-    font-family: 'Exo', sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 100;
     font-size: 46px;
     margin-top: 50px;
@@ -105,7 +124,7 @@ header {
 }
 
 .title {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
@@ -117,18 +136,17 @@ header {
     margin: 0;
 }
 
-
 .menucontainer {
     font-size: 0;
-}
-
-#nav {
-    margin: 0;
 }
 
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -160,17 +178,16 @@ header {
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 2px;
-
 }
 
-/* ----- Hover.css ----- */
+/*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
     background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/* ----- Footer ----- */
+/* ----------------------------------------Footer */
 
 footer {
     background-color: #525252;
@@ -222,19 +239,18 @@ footer {
     padding: 20px;
 }
 
-/* ----- Three Reasons ----- */
+/* ----------------------------------------Three Reasons */
 
 .three-reasons-icon {
     font-size: 26px;
     color: #e67e22;
-
 }
 
 .three-reasons-heading {
     margin-bottom: 15px;
 }
 
-/* ----- Personal Info ----- */
+/* ----------------------------------------Personal Info */
 
 .personal-info-item {
     margin-bottom: 20px;
@@ -267,4 +283,73 @@ footer {
 .personal-info-item .value {
     position: relative;
     width: 60%;
+}
+
+/* ----------------------------------------Skills */
+
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 11px;
+    color: #fafafa;
+    background-color: rgba(25, 25, 25, 0.2);
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+/* ----------------------------------------Work History */
+
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
+}
+
+.timeline-item p {
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.history-items {
+    margin-bottom: 30px;
+}
+
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
 }
