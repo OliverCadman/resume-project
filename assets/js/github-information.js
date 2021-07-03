@@ -1,6 +1,4 @@
-$(document).ready(function() {
-  userInformationHTML();
-})
+$(document).ready(fetchGithubInformation);
 
 function userInformationHTML(user) {
   return `
@@ -41,6 +39,8 @@ function repoInformationHTML(repos) {
 }
 
 function fetchGithubInformation(event) {
+  $('#gh-user-data').html('');
+  $('#gh-repo-data').html('');
   var username = $("#gh-username").val();
   if (!username) {
     $("#gh-user-data").html(`<p>Please enter a Github username</p>`);
